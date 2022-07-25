@@ -184,7 +184,8 @@ body{
     background-color: var(--bg-main-dark-color);
     background-image:   linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/index/bg_hero.jpg);
     background-repeat: no-repeat;
-    
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title{
@@ -462,12 +463,6 @@ body{
     color: var(--accent-color);
 }
 
-.join-us-container{
-    margin-top: 12px;
-    width: 206px;
-    height: 80px;
-}
-
 .join-us-text {
     margin-bottom: 20px;
 
@@ -488,6 +483,7 @@ body{
 .footer-cont {
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 
 
@@ -540,10 +536,6 @@ body{
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.example-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-item-wrapper{
    padding-top: 20px;
    padding-bottom: 20px;
@@ -572,5 +564,13 @@ body{
     color: var(--muted-text-color);
 }
 
+.exemple-link {
+    display: block;
+}
+
+.exemple-link:hover,
+.exemple-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 
